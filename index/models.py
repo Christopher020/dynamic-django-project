@@ -1,6 +1,5 @@
 from email.mime import image
-from tokenize import blank_re
-from turtle import title
+
 from django.db import models
 
 # Create your models here.
