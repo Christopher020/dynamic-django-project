@@ -1,12 +1,13 @@
 from multiprocessing import context
 from django.shortcuts import render
 from about .models import about
+from about .views import about
 from .models import slider
 from .models import client
 
 # Create your views here.
 def home(request):
-    aboutdata = about.objects.all()[0]
+    aboutdata = about.objects.all()
     sliderdata = slider.objects.all()
     clientdata = client.objects.all()
     context = {
